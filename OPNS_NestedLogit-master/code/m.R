@@ -39,7 +39,10 @@ pval_simultaneous <- trad_app(df, person_id) %>%
   boot_sample(boot_num) %>%
   wald_stat(df)
 
-
+### Now that we have p-values for both cases,
+### we can see if they are, for instance, less than 0.005
+### and draw conclusions as to whether the differences are
+### statistically differerent or not.
 
 
 
